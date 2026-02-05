@@ -47,7 +47,7 @@ const server = http.createServer((request, response) => {
         });
     } else {
         response.writeHead(404);
-        response.write('Page not found');
+        response.write(`Page ${requestUrl} not found`);
         response.end();
     }
 });
